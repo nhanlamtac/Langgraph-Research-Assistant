@@ -1,0 +1,6 @@
+langchain
+openai
+pdfplumber
+sqlalchemy
+chromadb
+python-dotenv

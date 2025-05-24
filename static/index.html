@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LLM Research Assistant</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <h2>💬 LLM Research Assistant</h2>
+    <form method="post" action="/">
+        <textarea name="prompt" placeholder="Ask something..." rows="4" cols="60">{{ prompt or '' }}</textarea><br/>
+        <button type="submit">Ask</button>
+    </form>
+    {% if response %}
+    <div class="response">
+        <h3>Response:</h3>
+        <pre>{{ response }}</pre>
+    </div>
+    {% endif %}
+</body>
+</html>
