@@ -4,7 +4,7 @@ from app.db.models import Base  # Import the Base metadata from your models
 
 # === Define the connection string for your MySQL database ===
 # Format: 'mysql+pymysql://<username>:<password>@<host>:<port>/<database_name>'
-DATABASE_URL = 'mysql+pymysql://root:@localhost:3306/llm_agent'
+DATABASE_URL = 'mysql+pymysql://root:123456789@localhost:3306/llm_agent'
 
 # === Create the SQLAlchemy engine to manage the database connection ===
 engine = create_engine(DATABASE_URL)
